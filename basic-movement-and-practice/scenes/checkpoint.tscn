@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cspiwkwhy4668"]
+
+[ext_resource type="Script" uid="uid://dhv6s0jxkw8ho" path="res://Scripts/checkpoint.gd" id="1_ywqth"]
+[ext_resource type="Texture2D" uid="uid://0nqeryoam2if" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_yyywg"]
+[ext_resource type="AudioStream" uid="uid://c5rw4fer3mew2" path="res://assets/brackeys_platformer_assets/sounds/mixkit-game-success-alert-2039.wav" id="3_vsimk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yyywg"]
+size = Vector2(14, 14)
+
+[node name="Checkpoint" type="Area2D" unique_id=1026999007]
+collision_mask = 2
+script = ExtResource("1_ywqth")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=21841124]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_yyywg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=42091712]
+position = Vector2(0, -7)
+texture = ExtResource("1_yyywg")
+region_enabled = true
+region_rect = Rect2(129, 50, 14, 14)
+
+[node name="checkpointSound" type="AudioStreamPlayer2D" parent="." unique_id=1675337379]
+stream = ExtResource("3_vsimk")
+bus = &"SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
