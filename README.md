@@ -10,7 +10,7 @@
 3. 💀 Die and respawn using a custom system
 4. 🏁 Reach the end to win
 
-[Gmaeplay](SCREENSHOTS/Gamplay.gif)
+![Gameplay](SCREENSHOTS/Gamplay.gif)
 
 ### Controls 
 WASD or Arrow Keys allong with space for jump
