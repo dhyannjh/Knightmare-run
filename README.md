@@ -10,9 +10,29 @@
 3. 💀 Die and respawn using a custom system
 4. 🏁 Reach the end to win
 
-<img width="45%" height="45%" alt="image" src="https://github.com/user-attachments/assets/7f8815c7-3fd6-4f39-897a-0444f40c133b" />
+<img width="800" height="411" alt="image" src="https://github.com/user-attachments/assets/7b2ff525-79ca-47ba-8c0f-6e8ef9020ef3" />
 
 
 ### Controls 
 WASD or Arrow Keys allong with space for jump
+
+## Built With
+
+1. Godot
+2. GDscript
+
+# Aditional Features
+
+The following features were added by me 
+
+1. Killiing enemies
+2. Checkpoints
+3. Respawn and endscreen
+
+# How to run
+
+1. Download or clone the repo
+2. Open in godot
+3. run the game scene
+
 
